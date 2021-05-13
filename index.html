@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+   <title>Document</title>
+</head>
+
+<body>
+
+  <h2>Likes ex</h2>
+  <div class="likes">
+    <button onclick="querySelector('*').innerHTML++">❤ Like<b>0</b></button>
+    <button onclick="likeDislike(this)">✘ Dislike<b>0</b></button>
+    <button id="anotherCounter">☢ Some data<b>0</b></button>
+  </div>
+
+  <h2>No user impact ex</h2>
+  <div class="blocked">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi placeat fuga corporis laudantium quas, commodi fugiat
+    nostrum asperiores harum doloribus veritatis architecto, perspiciatis corrupti delectus quam vero quaerat amet
+    optio.
+  </div>
+
+  <h2>TODO List ex </h2>
+
+  <!-- container -->
+  <div class="todo-list">
+
+    <!-- active tasks -->
+    <ul class="todo-list__active-list">
+    </ul>
+
+    <!-- completed tasks -->
+    <ul class="todo-list__done-list">
+    </ul>
+
+    <!-- add new task -->
+    <input class="todo-list__new-task" type="text" placeholder="Type new task...">
+    <button class="todo-list__add">add</button>
+
+  </div>
+
+
+
+  <!--  -->
+
+  <h2>Text editor ex</h2>
+  <div class="text-editor" id="editor">
+    <div>Press CTRL+E to edit</div>
+    <textarea class="hidden" type="text"></textarea>
+  </div>
+
+
+  <h2>Table sort ex</h2>
+  <table class="name-table">
+    <tr>
+      <th>id</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>John</td>
+      <td>Doe</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Alex</td>
+      <td>Murray</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Xavier</td>
+      <td>Johnson</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Ben</td>
+      <td>Harrison</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Michael</td>
+      <td>Ford</td>
+      <td>54</td>
+    </tr>
+  </table>
+
+  <h2>Resizable div ex</h2>
+
+
+  <textarea class="resizable">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam sequi fugiat illo vel animi, iste in delectus sapiente sed officiis molestiae, a ut voluptates minus laboriosam ex quia esse incidunt.
+    Fugiat deleniti illo totam hic, vitae est in, quod et animi dolor dolores. Omnis veritatis, accusamus corrupti unde nisi suscipit molestias non harum tempore explicabo! Sed voluptatem et placeat ratione.
+    Tempora dolor sit libero necessitatibus ipsam consectetur saepe sequi dignissimos accusantium quo maiores neque provident, ipsa, molestiae voluptas ut rerum! Reprehenderit tenetur, quibusdam perspiciatis optio deleniti assumenda ex reiciendis doloribus!
+    Magnam, quisquam ut mollitia recusandae dolore soluta deserunt earum quos et quia beatae, quaerat possimus magni alias cumque doloribus ratione consequatur ad ducimus sint? Mollitia deleniti maiores ex quae ducimus?
+    Voluptatum ad eum itaque iure, labore repellendus. Aperiam libero dicta aspernatur facilis tenetur optio ullam architecto omnis, officiis accusantium excepturi, nesciunt illo ducimus ipsam eveniet necessitatibus? Commodi nesciunt doloribus quasi.
+  </textarea>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

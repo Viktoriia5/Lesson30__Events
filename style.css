@@ -1,0 +1,223 @@
+html,
+body {
+  position: relative;
+  margin: 0;
+  padding: 10px;
+}
+
+.likes button {
+  min-width: 140px;
+  height: 40px;
+  text-align: left;
+  background: #82aec2;
+  font-weight: bold;
+  font-size: 18px;
+  border: 0;
+  outline: 0;
+  color: white;
+  border-radius: 4px;
+  border: 2px solid #82aec2;
+  border-radius: 4px;
+  border-top: 0;
+  border-left: 0;
+}
+
+.likes button > * {
+  color: #82aec2;
+  min-width: 30px;
+  background: white;
+  float: right;
+  text-align: center;
+  padding: 2px;
+  margin-left: 16px;
+  border: 2px solid #82aec2;
+  text-shadow: 1px 1px 1px #82aec2;
+  border-radius: 4px;
+  border-bottom: 0;
+  border-right: 0;
+}
+
+.likes button:hover {
+  box-shadow: 0px 0px 8px #82aec2;
+}
+.likes button:active {
+  background: #e6aba3;
+}
+
+/*  */
+.todo-list {
+  width: fit-content;
+}
+
+.todo-list input {
+  outline: 0;
+}
+
+.todo-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.todo-list ul > li {
+  border: 2px solid #a0a0a0;
+  border-radius: 8px;
+  border-top: 0;
+  border-left: 0;
+  background-color: #82aec2;
+  margin: 2px;
+  padding: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-list ul > li > button,
+.todo-list__add {
+  border: 0;
+  outline: 0;
+  background: 0;
+  font-size: larger;
+  margin-left: 4px;
+  color: #82aec2;
+}
+
+.todo-list__done-list > li {
+  background-color: #f3a38e !important;
+}
+.todo-list__done-list > li > button {
+  color: #d1826e !important;
+}
+
+.todo-list ul > li > button:first-child {
+  font-size: xx-large;
+  margin: -20px 0px;
+}
+
+.todo-list ul > li > input,
+.todo-list__new-task {
+  color: #444;
+  font-family: monospace;
+  min-width: 200px;
+  height: 100%;
+  background: white;
+  text-align: center;
+  padding: 4px;
+  border: 2px solid #a0a0a0;
+  text-shadow: 1px 1px 1px #82aec2;
+  border-radius: 4px;
+  border-bottom: 0;
+  border-right: 0;
+}
+
+.todo-list__active-list::before {
+  content: "Active tasks";
+}
+.todo-list__done-list::before {
+  content: "Completed tasks";
+}
+.todo-list__active-list::before,
+.todo-list__done-list::before {
+  display: block;
+  color: #fff;
+  background-color: #ddd;
+  border-radius: 8px;
+  font-family: monospace;
+  text-align: center;
+  font-size: x-large;
+}
+
+/*  */
+
+.text-editor div,
+.text-editor textarea {
+  resize: none;
+  outline: 4px solid black;
+  border: 4px solid #fff;
+  width: 400px;
+  height: 200px;
+  padding: 4px;
+  background: #222;
+  color: #fff;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+.hidden {
+  display: none;
+}
+.mb {
+  /*joke class*/
+  color: transparent;
+  text-shadow: 0px 0px 4px #111;
+}
+
+.blocked {
+  user-select: none;
+}
+
+.highlight {
+  background-color: #fd8;
+  font-weight: bold;
+}
+
+.name-table th {
+  cursor: pointer;
+}
+
+.name-table td {
+  border: 1px dotted #222;
+}
+
+.name-table td:first-child {
+  background-color: rgb(116, 110, 110);
+  color: #fff;
+  font-family: monospace;
+}
+
+.resizer {
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-left: 20px solid transparent;
+  border-bottom: 20px solid #fff;
+  margin: -2px;
+  background-color: #cbeba4;
+  outline: 2px solid #82aec2;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  cursor: se-resize;
+}
+
+.resizable {
+  display: block;
+  width: 400px;
+  height: 200px;
+  padding: 4px;
+  box-shadow: -4px -4px 4px 0px #82aec2;
+  background: #aed4e6;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow: hidden;
+  position: relative;
+  font-family: monospace;
+}
+
+.recursive {
+  font-size: 100px;
+}
+
+.end {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: -50px;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 32px;
+  color: transparent;
+  text-shadow: 0px 0px 4px #111, 0px 0px 32px white;
+  box-shadow: 0px -10px 10px 10px #111;
+  background-color: rgb(80, 75, 75);
+  cursor: pointer;
+}
